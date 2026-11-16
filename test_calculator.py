@@ -12,14 +12,14 @@ class TestCalculator(unittest.TestCase):
 
     ######## Partner 1
     def test_multiply(self):
-        self.assertEqual(calculator.multiply(3, 4), 12)
-        self.assertEqual(calculator.multiply(-2, 3), -6)
-        self.assertEqual(calculator.multiply(0, 5), 0)
+        self.assertEqual(calculator.mul(3, 4), 12)
+        self.assertEqual(calculator.mul(-2, 3), -6)
+        self.assertEqual(calculator.mul(0, 5), 0)
 
     def test_divide(self):
-        self.assertEqual(calculator.divide(2, 10), 5)
-        self.assertEqual(calculator.divide(4, 20), 5)
-        self.assertEqual(calculator.divide(3, 0), 0)
+        self.assertEqual(calculator.div(2, 10), 5)
+        self.assertEqual(calculator.div(4, 20), 5)
+        self.assertEqual(calculator.div(3, 0), 0)
 
 
     ######## Partner 2
@@ -40,10 +40,10 @@ class TestCalculator(unittest.TestCase):
     ######## Partner 1
     def test_log_invalid_argument(self):
         with self.assertRaises(ValueError):
-            calculator.logarithm(2, -5)
+            calculator.log(2, -5)
 
         with self.assertRaises(ValueError):
-            calculator.logarithm(0, 10)
+            calculator.log(0, 10)
     
     def test_hypotenuse(self):
         self.assertEqual(calculator.hypotenuse(3, 4), 5)
