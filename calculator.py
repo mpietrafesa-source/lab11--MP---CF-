@@ -1,3 +1,6 @@
+#https://github.com/mpietrafesa-source/lab11--MP---CF-.git
+#Partner 1: Mia Pietrafesa
+#Partner 2: Cameron Findley
 """
 calculator.py
 - Defines functions used to create a simple calculator
