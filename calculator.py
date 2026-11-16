@@ -27,7 +27,7 @@ def div(a, b):
 def log(a, b):
     if a <= 0 or a == 1 or b <= 0:
         raise ValueError
-    math.log(b, a)
+    return math.log(b, a)
 def exp(a, b):
     return a ** b
 
