@@ -3,11 +3,14 @@ from calculator import *
 
 class TestCalculator(unittest.TestCase):
     ######### Partner 2
-    # def test_add(self): # 3 assertions
-    #     fill in code
+     def test_add(self): # 3 assertions
+        self.assertEqual(add(5,3), 8)
+        self.assertEqual(add(-2, 3), 1)
+        
 
-    # def test_subtract(self): # 3 assertions
-    #     fill in code
+     def test_subtract(self): # 3 assertions
+         self.assertEqual(sub(4, 3), 1)
+         self.assertEqual(sub(4,-3), 7)
     # ##########################
 
     ######## Partner 1
@@ -19,17 +22,16 @@ class TestCalculator(unittest.TestCase):
     # ##########################
 
     ######## Partner 2
-    # def test_divide_by_zero(self): # 1 assertion
-    #     # call division function inside, example:
-    #     # with self.assertRaises(<INSERT_ERROR_TYPE>):
-    #     #     div(0, 5)
-    #     fill in code
+     def test_divide_by_zero(self): # 1 assertion
+          with self.assertRaises(ZeroDivisionError):
+              div(0, 5)
 
-    # def test_logarithm(self): # 3 assertions
-    #     fill in code
+     def test_logarithm(self): # 3 assertions
+        self.assertAlmostEquals(log(2, 1), 0)
 
-    # def test_log_invalid_base(self): # 1 assertion
-    #     # use same technique from test_divide_by_zero
+     def test_log_invalid_base(self): # 1 assertion
+            with self.assertRaises(ValueError):
+                 log(2, 0)
     #     fill in code
     # ##########################
     
